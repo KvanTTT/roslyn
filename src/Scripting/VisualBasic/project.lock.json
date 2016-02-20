@@ -2,7 +2,7 @@
   "locked": false,
   "version": 1,
   "targets": {
-    ".NETPlatform,Version=v5.0": {
+    ".NETPlatform,Version=v5.4": {
       "Microsoft.NETCore.Portable.Compatibility/1.0.1-beta-23504": {
         "compile": {
           "ref/dotnet/mscorlib.dll": {},
@@ -20,7 +20,7 @@
           "ref/dotnet/System.Xml.Serialization.dll": {}
         }
       },
-      "Microsoft.VisualBasic/10.0.0": {
+      "Microsoft.VisualBasic/10.0.1-beta-23504": {
         "dependencies": {
           "System.Collections": "[4.0.10, )",
           "System.Diagnostics.Debug": "[4.0.10, )",
@@ -40,18 +40,18 @@
           "System.Threading": "[4.0.10, )"
         },
         "compile": {
-          "ref/dotnet/Microsoft.VisualBasic.dll": {}
+          "ref/dotnet5.2/Microsoft.VisualBasic.dll": {}
         },
         "runtime": {
-          "lib/dotnet/Microsoft.VisualBasic.dll": {}
+          "lib/dotnet5.4/Microsoft.VisualBasic.dll": {}
         }
       },
-      "System.AppContext/4.0.0": {
+      "System.AppContext/4.0.1-beta-23504": {
         "dependencies": {
           "System.Runtime": "[4.0.0, )"
         },
         "compile": {
-          "ref/dotnet/System.AppContext.dll": {}
+          "ref/dotnet5.4/System.AppContext.dll": {}
         }
       },
       "System.Collections/4.0.10": {
@@ -218,13 +218,27 @@
       },
       "System.Reflection.Metadata/1.2.0-rc3-23811": {
         "dependencies": {
-          "System.Collections.Immutable": "[1.1.37, )"
+          "System.Collections": "[4.0.0, )",
+          "System.Collections.Immutable": "[1.1.37, )",
+          "System.Diagnostics.Debug": "[4.0.0, )",
+          "System.IO": "[4.0.0, )",
+          "System.Linq": "[4.0.0, )",
+          "System.Reflection": "[4.0.0, )",
+          "System.Reflection.Extensions": "[4.0.0, )",
+          "System.Reflection.Primitives": "[4.0.0, )",
+          "System.Resources.ResourceManager": "[4.0.0, )",
+          "System.Runtime": "[4.0.0, )",
+          "System.Runtime.Extensions": "[4.0.0, )",
+          "System.Runtime.InteropServices": "[4.0.0, )",
+          "System.Text.Encoding": "[4.0.0, )",
+          "System.Text.Encoding.Extensions": "[4.0.0, )",
+          "System.Threading": "[4.0.0, )"
         },
         "compile": {
-          "lib/portable-net45+win8/System.Reflection.Metadata.dll": {}
+          "lib/dotnet5.2/System.Reflection.Metadata.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+win8/System.Reflection.Metadata.dll": {}
+          "lib/dotnet5.2/System.Reflection.Metadata.dll": {}
         }
       },
       "System.Reflection.Primitives/4.0.0": {
@@ -292,6 +306,15 @@
         },
         "compile": {
           "ref/dotnet/System.Text.Encoding.dll": {}
+        }
+      },
+      "System.Text.Encoding.Extensions/4.0.0": {
+        "dependencies": {
+          "System.Runtime": "[4.0.0, )",
+          "System.Text.Encoding": "[4.0.0, )"
+        },
+        "compile": {
+          "ref/dotnet/System.Text.Encoding.Extensions.dll": {}
         }
       },
       "System.Threading/4.0.10": {
@@ -395,39 +418,48 @@
         "runtimes/aot/lib/netcore50/System.Xml.Serialization.dll"
       ]
     },
-    "Microsoft.VisualBasic/10.0.0": {
-      "sha512": "5BEm2/HAVd97whRlCChU7rmSh/9cwGlZ/NTNe3Jl07zuPWfKQq5TUvVNUmdvmEe8QRecJLZ4/e7WF1i1O8V42g==",
+    "Microsoft.VisualBasic/10.0.1-beta-23504": {
+      "sha512": "rgmvkhiP34p4Hme3V1IrF3hBJnw7g/96Kum9Fttv5vE5T32EJOU9JWgHbevJkZxLPCT3jpbugbIErutJ7hdIyQ==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
         "_rels/.rels",
-        "lib/dotnet/Microsoft.VisualBasic.dll",
+        "lib/dotnet5.4/Microsoft.VisualBasic.dll",
         "lib/net45/_._",
         "lib/netcore50/Microsoft.VisualBasic.dll",
         "lib/win8/_._",
         "lib/wpa81/_._",
         "Microsoft.VisualBasic.nuspec",
-        "package/services/metadata/core-properties/5dbd3a7042354092a8b352b655cf4376.psmdcp",
-        "ref/dotnet/de/Microsoft.VisualBasic.xml",
-        "ref/dotnet/es/Microsoft.VisualBasic.xml",
-        "ref/dotnet/fr/Microsoft.VisualBasic.xml",
-        "ref/dotnet/it/Microsoft.VisualBasic.xml",
-        "ref/dotnet/ja/Microsoft.VisualBasic.xml",
-        "ref/dotnet/ko/Microsoft.VisualBasic.xml",
-        "ref/dotnet/Microsoft.VisualBasic.dll",
-        "ref/dotnet/Microsoft.VisualBasic.xml",
-        "ref/dotnet/ru/Microsoft.VisualBasic.xml",
-        "ref/dotnet/zh-hans/Microsoft.VisualBasic.xml",
-        "ref/dotnet/zh-hant/Microsoft.VisualBasic.xml",
+        "package/services/metadata/core-properties/229c4de0c15945b1b0864a68b9431838.psmdcp",
+        "ref/dotnet5.2/de/Microsoft.VisualBasic.xml",
+        "ref/dotnet5.2/es/Microsoft.VisualBasic.xml",
+        "ref/dotnet5.2/fr/Microsoft.VisualBasic.xml",
+        "ref/dotnet5.2/it/Microsoft.VisualBasic.xml",
+        "ref/dotnet5.2/ja/Microsoft.VisualBasic.xml",
+        "ref/dotnet5.2/ko/Microsoft.VisualBasic.xml",
+        "ref/dotnet5.2/Microsoft.VisualBasic.dll",
+        "ref/dotnet5.2/Microsoft.VisualBasic.xml",
+        "ref/dotnet5.2/ru/Microsoft.VisualBasic.xml",
+        "ref/dotnet5.2/zh-hans/Microsoft.VisualBasic.xml",
+        "ref/dotnet5.2/zh-hant/Microsoft.VisualBasic.xml",
         "ref/net45/_._",
+        "ref/netcore50/de/Microsoft.VisualBasic.xml",
+        "ref/netcore50/es/Microsoft.VisualBasic.xml",
+        "ref/netcore50/fr/Microsoft.VisualBasic.xml",
+        "ref/netcore50/it/Microsoft.VisualBasic.xml",
+        "ref/netcore50/ja/Microsoft.VisualBasic.xml",
+        "ref/netcore50/ko/Microsoft.VisualBasic.xml",
         "ref/netcore50/Microsoft.VisualBasic.dll",
         "ref/netcore50/Microsoft.VisualBasic.xml",
+        "ref/netcore50/ru/Microsoft.VisualBasic.xml",
+        "ref/netcore50/zh-hans/Microsoft.VisualBasic.xml",
+        "ref/netcore50/zh-hant/Microsoft.VisualBasic.xml",
         "ref/win8/_._",
         "ref/wpa81/_._"
       ]
     },
-    "System.AppContext/4.0.0": {
-      "sha512": "gUoYgAWDC3+xhKeU5KSLbYDhTdBYk9GssrMSCcWUADzOglW+s0AmwVhOUGt2tL5xUl7ZXoYTPdA88zCgKrlG0A==",
+    "System.AppContext/4.0.1-beta-23504": {
+      "sha512": "FydiMGvlMoBbDr4Zi2tYFR/78ctFdDtGtghaJaye28LCuhoaercsui/Fawsx8OkNfWQjdVuujUfrpcTF+f5ghQ==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -439,18 +471,18 @@
         "lib/netcore50/System.AppContext.dll",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
-        "package/services/metadata/core-properties/3b390478e0cd42eb8818bbab19299738.psmdcp",
-        "ref/dotnet/de/System.AppContext.xml",
-        "ref/dotnet/es/System.AppContext.xml",
-        "ref/dotnet/fr/System.AppContext.xml",
-        "ref/dotnet/it/System.AppContext.xml",
-        "ref/dotnet/ja/System.AppContext.xml",
-        "ref/dotnet/ko/System.AppContext.xml",
-        "ref/dotnet/ru/System.AppContext.xml",
-        "ref/dotnet/System.AppContext.dll",
-        "ref/dotnet/System.AppContext.xml",
-        "ref/dotnet/zh-hans/System.AppContext.xml",
-        "ref/dotnet/zh-hant/System.AppContext.xml",
+        "package/services/metadata/core-properties/7d3d6656da3b4f6588507de4202908fc.psmdcp",
+        "ref/dotnet5.4/de/System.AppContext.xml",
+        "ref/dotnet5.4/es/System.AppContext.xml",
+        "ref/dotnet5.4/fr/System.AppContext.xml",
+        "ref/dotnet5.4/it/System.AppContext.xml",
+        "ref/dotnet5.4/ja/System.AppContext.xml",
+        "ref/dotnet5.4/ko/System.AppContext.xml",
+        "ref/dotnet5.4/ru/System.AppContext.xml",
+        "ref/dotnet5.4/System.AppContext.dll",
+        "ref/dotnet5.4/System.AppContext.xml",
+        "ref/dotnet5.4/zh-hans/System.AppContext.xml",
+        "ref/dotnet5.4/zh-hant/System.AppContext.xml",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
         "ref/net46/System.AppContext.dll",
@@ -1248,6 +1280,55 @@
         "System.Text.Encoding.nuspec"
       ]
     },
+    "System.Text.Encoding.Extensions/4.0.0": {
+      "sha512": "FktA77+2DC0S5oRhgM569pbzFrcA45iQpYiI7+YKl68B6TfI2N5TQbXqSWlh2YXKoFXHi2RFwPMha2lxiFJZ6A==",
+      "type": "Package",
+      "files": [
+        "[Content_Types].xml",
+        "_rels/.rels",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "License.rtf",
+        "package/services/metadata/core-properties/c37aa1347f574e6c8df522449486a4d2.psmdcp",
+        "ref/dotnet/de/System.Text.Encoding.Extensions.xml",
+        "ref/dotnet/es/System.Text.Encoding.Extensions.xml",
+        "ref/dotnet/fr/System.Text.Encoding.Extensions.xml",
+        "ref/dotnet/it/System.Text.Encoding.Extensions.xml",
+        "ref/dotnet/ja/System.Text.Encoding.Extensions.xml",
+        "ref/dotnet/ko/System.Text.Encoding.Extensions.xml",
+        "ref/dotnet/ru/System.Text.Encoding.Extensions.xml",
+        "ref/dotnet/System.Text.Encoding.Extensions.dll",
+        "ref/dotnet/System.Text.Encoding.Extensions.xml",
+        "ref/dotnet/zh-hans/System.Text.Encoding.Extensions.xml",
+        "ref/dotnet/zh-hant/System.Text.Encoding.Extensions.xml",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/de/System.Text.Encoding.Extensions.xml",
+        "ref/netcore50/es/System.Text.Encoding.Extensions.xml",
+        "ref/netcore50/fr/System.Text.Encoding.Extensions.xml",
+        "ref/netcore50/it/System.Text.Encoding.Extensions.xml",
+        "ref/netcore50/ja/System.Text.Encoding.Extensions.xml",
+        "ref/netcore50/ko/System.Text.Encoding.Extensions.xml",
+        "ref/netcore50/ru/System.Text.Encoding.Extensions.xml",
+        "ref/netcore50/System.Text.Encoding.Extensions.dll",
+        "ref/netcore50/System.Text.Encoding.Extensions.xml",
+        "ref/netcore50/zh-hans/System.Text.Encoding.Extensions.xml",
+        "ref/netcore50/zh-hant/System.Text.Encoding.Extensions.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "System.Text.Encoding.Extensions.nuspec"
+      ]
+    },
     "System.Threading/4.0.10": {
       "sha512": "0w6pRxIEE7wuiOJeKabkDgeIKmqf4ER1VNrs6qFwHnooEE78yHwi/bKkg5Jo8/pzGLm0xQJw0nEmPXt1QBAIUA==",
       "type": "Package",
@@ -1319,8 +1400,9 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Microsoft.VisualBasic >= 10.0.0"
+      "Microsoft.VisualBasic >= 10.0.1-beta-23504",
+      "System.AppContext >= 4.0.1-beta-23504"
     ],
-    ".NETPlatform,Version=v5.0": []
+    ".NETPlatform,Version=v5.4": []
   }
 }

@@ -27,7 +27,7 @@
           "lib/portable-net45+win8+wp8+wpa81/System.Composition.TypedParts.dll": {}
         }
       },
-      "Microsoft.DiaSymReader/1.0.7": {
+      "Microsoft.DiaSymReader/1.0.7-beta1-51221": {
         "compile": {
           "lib/net20/Microsoft.DiaSymReader.dll": {}
         },
@@ -89,6 +89,24 @@
         },
         "runtime": {
           "lib/net46/_._": {}
+        }
+      },
+      "System.Diagnostics.Process/4.1.0-beta-23504": {
+        "dependencies": {
+          "System.IO": "[4.0.0, )",
+          "System.Runtime": "[4.0.0, )",
+          "System.Runtime.Handles": "[4.0.0, )",
+          "System.Text.Encoding": "[4.0.0, )"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System"
+        ],
+        "compile": {
+          "ref/net46/System.Diagnostics.Process.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Diagnostics.Process.dll": {}
         }
       },
       "System.Diagnostics.StackTrace/4.0.0": {
@@ -309,8 +327,8 @@
         "package/services/metadata/core-properties/12e2c94035674b25b911285cc26e3260.psmdcp"
       ]
     },
-    "Microsoft.DiaSymReader/1.0.7": {
-      "sha512": "4tPrkKu02w87HEvoubBGm7Hqjps69DucsBWQvGezwvDV5RJt+eZqdmdC/jNH1qn6hIem9JpJnLBK0abBzhErOg==",
+    "Microsoft.DiaSymReader/1.0.7-beta1-51221": {
+      "sha512": "sQ/I7+gi4Si8K7fqyJgMswip9RNvKjUD9CmmWwzcCxnX2sMLDA5X54thgX+cQn7nF0+C35a1nAYgafDsqiPOkg==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -320,7 +338,7 @@
         "lib/portable-net45+win8/Microsoft.DiaSymReader.dll",
         "lib/portable-net45+win8/Microsoft.DiaSymReader.xml",
         "Microsoft.DiaSymReader.nuspec",
-        "package/services/metadata/core-properties/8754926735b64532b55b0acd21f93808.psmdcp"
+        "package/services/metadata/core-properties/2e8b0ffd43c2417296e93e7c2ee8d686.psmdcp"
       ]
     },
     "Microsoft.NETCore.Portable.Compatibility/1.0.1-beta-23504": {
@@ -517,6 +535,51 @@
         "ref/xamarinmac20/_._",
         "runtimes/win8-aot/lib/netcore50/System.Diagnostics.Debug.dll",
         "System.Diagnostics.Debug.nuspec"
+      ]
+    },
+    "System.Diagnostics.Process/4.1.0-beta-23504": {
+      "sha512": "x2J3Sww13e9um3rXRf+iBh06z3elsh2ihbKaJyn3rT97PMY/AJUpySARe9eqvs5SnzuI9FT+4++iSdWV5Ftmgg==",
+      "type": "Package",
+      "files": [
+        "[Content_Types].xml",
+        "_rels/.rels",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Diagnostics.Process.dll",
+        "lib/net461/System.Diagnostics.Process.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "package/services/metadata/core-properties/8de02146c9524f4bab8216e3a80d95b8.psmdcp",
+        "ref/dotnet5.4/de/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/es/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/fr/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/it/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/ja/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/ko/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/ru/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/System.Diagnostics.Process.dll",
+        "ref/dotnet5.4/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/zh-hans/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/zh-hant/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/de/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/es/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/fr/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/it/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/ja/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/ko/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/ru/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/System.Diagnostics.Process.dll",
+        "ref/dotnet5.5/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/zh-hans/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/zh-hant/System.Diagnostics.Process.xml",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Diagnostics.Process.dll",
+        "ref/net461/System.Diagnostics.Process.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "runtime.json",
+        "System.Diagnostics.Process.nuspec"
       ]
     },
     "System.Diagnostics.StackTrace/4.0.0": {
@@ -1161,14 +1224,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "": [
-      "System.Collections >= 4.0.10",
-      "System.Diagnostics.Debug >= 4.0.10",
-      "System.Globalization >= 4.0.10",
-      "System.Runtime >= 4.0.20",
-      "System.Runtime.Extensions >= 4.0.10",
-      "System.Threading >= 4.0.10"
-    ],
+    "": [],
     ".NETFramework,Version=v4.6": []
   }
 }
